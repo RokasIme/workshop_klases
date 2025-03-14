@@ -1,0 +1,115 @@
+/*****************************************************
+ 
+    Numatytųjų naršyklės stiliaus taisyklių perrašymas 
+ 
+******************************************************/
+
+/* Visos išorinės paraštės (margin) lygios 0 */
+/* Šrifto tipo ir dydžio taisyklės visam tinklapiui */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Kelios klasės */
+
+.description {
+  background-color: #f3f3f3;
+}
+
+.container {
+  padding: 30px 10px;
+}
+
+/****************************************
+ 
+    Tinklapio antraštė 
+ 
+*****************************************/
+
+/* header: 
+    fono spalva: #16A085, 
+    teksto - balta.
+*/
+header {
+  background-color: #16a085;
+  color: white;
+}
+
+/* <h1>, esantis <header> dalyje: 
+    tekstas: visos didžiosios raidės,
+    vidinės paraštės (padding): 20px 0,
+*/
+header > h1 {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+/* <h3>, esantis <header> dalyje:
+    tarpai tarp raidžių: 0,3 em
+*/
+header > h3 {
+  letter-spacing: 0.3em;
+}
+
+/* <nav>, esantis <header> dalyje:
+    viršutinis rėmelis: 2px dashed white;
+    viršutinė vidinė paraštė: 20px;
+*/
+header > nav {
+  border-top: 2px dashed white;
+  padding-top: 20px;
+}
+
+/* nuoroda, esanti <header> dalyje:
+    spalva: balta;
+    teksto pabraukimo nėra;
+*/
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* sąrašas, esantis <header> dalyje:
+    sąrašo ženklinimo nėra;
+    visos vidinės paraštės lygios 0;
+*/
+header > nav > ul {
+  padding: 0;
+}
+
+/* 
+sąrašas išdėstytas eilutėje:
+*/
+
+header nav li {
+  display: inline-block;
+  width: 150px;
+}
+
+/* Pseudo klases nuorodoms, <header> dalyje */
+
+/* :link
+    teksto spalva: balta;
+*/
+header a:link {
+  color: white;
+}
+
+/* :visited 
+    teksto spalva: balta;
+*/
+header a:visited {
+  color: white;
+}
+
+/* :hover
+    teksto spalva: balta;
+    tesktas pabrauktas;
+*/
+header a:hover {
+  color: white;
+  text-decoration: underline;
+}
